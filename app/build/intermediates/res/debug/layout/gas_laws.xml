@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Ideal Gas Law"
+        android:id="@+id/title"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PV = nRT"
+        android:id="@+id/equation"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter in three values below."
+        android:id="@+id/instructions"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/equation"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="P (kPa) = "
+        android:id="@+id/p"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/instructions"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/vAnswer"
+        android:inputType="numberDecimal"
+    android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_alignBottom="@+id/v"
+        android:layout_marginRight="10dp"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/nAnswer"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:inputType="numberDecimal"
+        android:layout_alignBottom="@+id/n"
+        android:layout_marginRight="10dp"
+        android:textSize="24sp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:inputType="numberDecimal"
+        android:id="@+id/pAnswer"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_alignBottom="@+id/p"
+        android:layout_marginRight="10dp"
+        android:textSize="24sp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:inputType="numberDecimal"
+        android:id="@+id/tAnswer"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_alignBottom="@+id/t"
+        android:layout_marginRight="10dp"
+        android:textSize="24sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="V (L) = "
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/p"
+        android:id="@+id/v"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="n (mol)= "
+        android:layout_below="@+id/v"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/n"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="R = 8.314 (L * kPa)/(K * mol)"
+        android:id="@+id/r"
+        android:layout_below="@+id/n"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="T (K) = "
+        android:layout_alignParentLeft="true"
+        android:id="@+id/t"
+        android:layout_below="@+id/r"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/ans"
+        android:layout_below="@+id/t"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="110dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonClear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/mybutton"
+        android:text="Calculate " />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="110dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/mybutton"
+        android:layout_alignParentBottom="true"
+        android:text="Clear All" />
+
+
+
+</RelativeLayout><!-- From: file:/C:/Users/Amita/Documents/AndroidStudioProjects/mySci/MySci25/MySci25/app/src/main/res/layout/gas_laws.xml -->

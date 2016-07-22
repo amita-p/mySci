@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/mybutton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mybutton"
+        android:layout_marginBottom="10sp"
+        android:text="Clear All Fields" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:text="Free Body Diagrams"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/beginning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:text="Enter in any two values below."
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/TextMass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/beginning"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="Mass(kg)"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TextAcceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextMass"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Acceleration(m/s^2)"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TextForce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextAcceleration"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Force (N)"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/editTextMass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextMass"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/v1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10sp"
+        android:layout_marginRight="15dp"
+        android:inputType="numberDecimal"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/editTextAcceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextAcceleration"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/v1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10sp"
+        android:layout_marginRight="15dp"
+        android:inputType="numberDecimal"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextForce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextForce"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10sp"
+        android:layout_marginRight="15dp"
+        android:inputType="numberDecimal"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Amita/Documents/AndroidStudioProjects/mySci/MySci25/MySci25/app/src/main/res/layout/free_body_diagram.xml -->

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/editReactants"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="93dp" />
+
+    <EditText
+        android:id="@+id/editProducts"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="→"
+        android:id="@+id/textView"
+        android:textSize="50dp"
+        android:layout_alignBottom="@+id/editReactants"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balanced Chemical Equation:"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:text="Enter Amounts"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="44dp"
+        android:layout_alignRight="@+id/textView2" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/scrollView"
+        android:layout_alignLeft="@+id/editProducts" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Kinematic Equations"
+        android:id="@+id/kinematicsButton"
+        android:textColor="#FDFF00"
+        android:background="@drawable/mybutton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="192dp" />
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Free Body Diagrams"
+        android:id="@+id/fbdButton"
+        android:textColor="#FDFF00"
+        android:background="@drawable/mybutton"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/kinematicsButton"
+        android:layout_alignLeft="@+id/kinematicsButton"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

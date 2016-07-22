@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/Enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
+        android:text="Calculate the pH" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/Enter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center_horizontal"
+        android:checkedButton="@+id/radio_moles"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/weak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Weak Acid"
+            android:textSize="20sp"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/strong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onRadioButtonClicked"
+            android:text="Strong Acid"
+            android:textSize="20sp"
+            android:checked="true" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="24sp"
+        android:inputType="numberDecimal"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/amount"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/ka_values"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24sp"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/radioGroup"/>
+
+    <TextView
+        android:id="@+id/answer_weak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spinner"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/mybutton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mybutton"
+        android:layout_marginBottom="10sp"
+        android:text="Clear All Fields" />
+
+
+
+
+</RelativeLayout><!-- From: file:/C:/Users/Amita/Documents/AndroidStudioProjects/mySci/MySci25/MySci25/app/src/main/res/layout/acid_base_layout.xml -->

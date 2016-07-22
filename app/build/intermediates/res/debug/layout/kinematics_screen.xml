@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:text="Kinematics"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/beginning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/title"
+        android:text="Enter in three values below."
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5sp"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/v1"
+        android:layout_marginTop="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10sp"
+        android:text="Initial Velocity (m/s)"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/beginning"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/v1Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/v1"
+        android:layout_below="@+id/v1"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10sp"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:layout_gravity="center_horizontal"
+        android:text="Final Velocity (m/s)"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:layout_centerHorizontal="true"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/v1"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/v2Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+          android:layout_below="@+id/v2"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/v2"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Acceleration m/s²"
+        android:layout_below="@+id/v2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="15sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/aInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/a"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/a"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Time (s)"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/a"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/tInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/t"
+        android:textSize="24sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignBaseline="@+id/t"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="Displacement (m)"
+        android:layout_marginBottom="10sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:layout_below="@+id/t"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/dInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/d"
+        android:layout_below="@+id/d"
+        android:layout_marginRight="10dp"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <TextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/d"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/CalculateButton"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/mybutton"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/dInput"
+        android:singleLine="false"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/ClearButton"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/mybutton"
+        android:singleLine="false"
+        android:layout_below="@+id/CalculateButton"
+        android:layout_centerInParent="true"
+        android:text="Clear" />
+
+
+
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Amita/Documents/AndroidStudioProjects/mySci/MySci25/MySci25/app/src/main/res/layout/kinematics_screen.xml -->

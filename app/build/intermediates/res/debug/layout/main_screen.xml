@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="mySci"
+        android:textColor="#FF0000"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/flask"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/physics"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/mybutton"
+        android:text="Physics"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/flask"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FDFF00" />
+
+    <Button
+        android:id="@+id/chem"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:layout_below="@+id/physics"
+        android:layout_centerHorizontal="true"
+        android:text="Chemistry"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ff0bc937"
+        android:clickable="false" />
+
+    <Button
+        android:id="@+id/bio"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/chem"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mybutton"
+        android:text="Biology"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ff8cc7ff" />
+
+    <Button
+        android:id="@+id/generalMath"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:text="Math"
+        android:layout_below="@+id/bio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FF0000"
+        android:layout_gravity="center_horizontal" />
+
+
+</RelativeLayout><!-- From: file:/C:/Users/Amita/Documents/AndroidStudioProjects/mySci/MySci25/MySci25/app/src/main/res/layout/main_screen.xml -->
